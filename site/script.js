@@ -159,6 +159,16 @@ const albums = [
     favoriteSong: "backfire",
     songRating: [true, true, true, true, true],
   },
+  {
+    id: 9,
+    title: "Lotus",
+    artist: "Within Destruction",
+    cover:
+      "https://f4.bcbits.com/img/a4135374089_10.jpg",
+    rating: [true, true, true, false, false],
+    favoriteSong: "Survival",
+    songRating: [true, true, true, true, true],
+  },
 ];
 
 function createAlbumHTML(album) {
