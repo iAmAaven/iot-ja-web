@@ -116,6 +116,7 @@ main {
     height: 300px;
     perspective: 1000px;
     align-content: center;
+    transition: transform 0.5s, width 0.5s, height 0.5s;
 }
 
 .album-inner {
@@ -123,13 +124,19 @@ main {
     height: 100%;
     position: relative;
     transform-style: preserve-3d;
-    transition: transform 0.5s;
     box-shadow: 0px 12px 20px 0px black;
+    transition: transform 0.5s;
 }
 
 .album-cover {
     width: 80%;
     position: fixed;
+}
+.album-cover-back {
+    z-index: -1;
+    position: fixed;
+    opacity: 0.25;
+    width: 80%;
 }
 
 .album-title {
@@ -164,6 +171,10 @@ main {
 .album-box-front {
     background-color: #383838;
     color: #ddd;
+    transition: filter 0.4s;
+    &:hover {
+        filter: blur(0px);
+    }
 }
 
 .album-box-front, .album-box-back {

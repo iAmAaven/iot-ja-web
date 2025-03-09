@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <style>
+        .btn-primary {
+            background-color: #4CAF50;
+            border-color: #4CAF50;
+        }
+        .btn-primary:hover{
+            background-color: #45a049;
+            border-color: #45a049;
+        }
+        footer a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#register">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Carousel -->
+    <div class="container mt-4">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active"><img src="https://cms.kerrang.com/images/Sleep-Token-February-2024-promo-credit-Andy-Ford-2_2024-02-14-151720_gcqo.jpg" class="d-block w-100" alt="Slide 1"></div>
+                <div class="carousel-item"><img src="https://cdn-p.smehost.net/sites/7f9737f2506941499994d771a29ad47a/wp-content/uploads/2023/12/Sleep-Token-II-Drumeo.jpg" class="d-block w-100" alt="Slide 2"></div>
+                <div class="carousel-item"><img src="https://images7.alphacoders.com/131/1312721.jpeg" class="d-block w-100" alt="Slide 3"></div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Three-column section -->
+    <div class="container mt-4">
+        <h1 id="about">About</h1>
+        <div class="row">
+            <div class="col-md-4 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ut saepe odit neque sunt sequi! Incidunt iste est pariatur veniam consequuntur? Aliquid, deserunt? Praesentium quos eum architecto, harum consequatur impedit?</div>
+            <div class="col-md-4 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum ea soluta sint optio reiciendis incidunt delectus provident sit! Voluptates distinctio corrupti suscipit neque consequatur eligendi quisquam vel quidem aut.</div>
+            <div class="col-md-4 mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias corrupti tempora eius, culpa dignissimos consectetur vel maiores, natus libero nobis, pariatur voluptate facere asperiores tenetur doloremque magnam quam nostrum unde.</div>
+        </div>
+    </div>
+    
+    <!-- Cards -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <img src="https://i.scdn.co/image/ab67616d0000b27337e062080cfa13915e082ff3" class="card-img-top" alt="Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Sleep Token</h5>
+                        <p class="card-text">Chokehold</p>
+                        <a href="https://www.youtube.com/watch?v=-UUSUrr6zyo" class="btn btn-primary" data-bs-toggle="tooltip" title="Click me!">Listen</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <img src="https://i.scdn.co/image/ab67616d0000b2739d62fac089698961eab30227" class="card-img-top" alt="Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Sleep Token</h5>
+                        <p class="card-text">The Summoning</p>
+                        <a href="https://www.youtube.com/watch?v=wJNbtYdr-Hg" class="btn btn-primary" data-bs-toggle="tooltip" title="Click me!">Listen</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273952b5ce4f936d88bd69109c8" class="card-img-top" alt="Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Sleep Token</h5>
+                        <p class="card-text">Granite</p>
+                        <a href="https://www.youtube.com/watch?v=om4dEGKnEmw" class="btn btn-primary" data-bs-toggle="tooltip" title="Click me!">Listen</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273288369f7f3ef9a86401b438a" class="card-img-top" alt="Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Sleep Token</h5>
+                        <p class="card-text">Aqua Regia</p>
+                        <a href="https://www.youtube.com/watch?v=nVE1ziLuSNg" class="btn btn-primary" data-bs-toggle="tooltip" title="Click me!">Listen</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273d5449ab46998735bbba511f1" class="card-img-top" alt="Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Sleep Token</h5>
+                        <p class="card-text">Vore</p>
+                        <a href="https://www.youtube.com/watch?v=3zDjAtG_y5A" class="btn btn-primary" data-bs-toggle="tooltip" title="Click me!">Listen</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273e4fef6fefeed14b8d13d0580" class="card-img-top" alt="Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Sleep Token</h5>
+                        <p class="card-text">DYWTYLM</p>
+                        <a href="https://www.youtube.com/watch?v=hP-6iVUyt8E" class="btn btn-primary" data-bs-toggle="tooltip" title="Click me!">Listen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal Button -->
+    <div class="container mt-4">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Open Modal</button>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Hello there!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">This is a modal window.</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Registration Form -->
+    <div class="container mt-4">
+        <h1 id="register">Register</h1>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" required>
+            </div>
+            <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="terms" required>
+                <label class="form-check-label" for="terms">Accept terms</label>
+            </div>
+            <button type="submit" class="btn btn-primary" data-bs-toggle="tooltip" title="Register">Register</button>
+        </form>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-5 mt-4">
+        <a href="https://www.facebook.com/" class="text-white me-3" data-bs-toggle="tooltip" title="Facebook">
+            <i class="bi bi-facebook" style="font-size: 2rem;"></i>
+        </a>
+        <a href="https://www.x.com/" class="text-white me-3" data-bs-toggle="tooltip" title="Twitter">
+            <i class="bi bi-twitter" style="font-size: 2rem;"></i>
+        </a>
+        <a href="https://www.instagram.com/" class="text-white" data-bs-toggle="tooltip" title="Instagram">
+            <i class="bi bi-instagram" style="font-size: 2rem;"></i>
+        </a>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+    </script>
+</body>
+</html>

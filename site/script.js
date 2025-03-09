@@ -116,8 +116,8 @@ const albums = [
     cover:
       "https://upload.wikimedia.org/wikipedia/en/a/af/TheDeathOfPeaceOfMind.jpg",
     rating: [true, true, true, true, false],
-    favoriteSong: "TBA",
-    songRating: [false, false, false, false, false],
+    favoriteSong: "bad decisions",
+    songRating: [true, true, true, true, false],
   },
   {
     id: 5,
@@ -192,6 +192,7 @@ function createAlbumHTML(album) {
                   <strong class="artist">${album.artist}</strong>
               </div>
               <div class="album-box-back">
+                  <img src="${album.cover}" class="album-cover-back">
                   <strong>ALBUM RATING:</strong>
                   <div class="rating-box">${ratingStars}</div>
                   <strong><br><br>FAVORITE SONG:</strong>
@@ -234,4 +235,30 @@ if (albumContainer) {
       albumBoxes.forEach((box) => albumContainer.appendChild(box));
     });
   }
+
+  const albumBoxes = document.querySelectorAll(".album-box");
+
+  albumBoxes.forEach((box) => {
+    box.addEventListener("mouseover", () => {
+      albumBoxes.forEach((otherBox) => {
+        if (otherBox !== box) {
+          otherBox.querySelector(".album-box-front").style.filter = "blur(3px)";
+          otherBox.style.width = "300px";
+          otherBox.style.height = "300px";
+        }
+        else {
+          otherBox.style.width = "325px";
+          otherBox.style.height = "325px";
+        }
+      });
+    });
+    
+    box.addEventListener("mouseout", () => {
+      albumBoxes.forEach((otherBox) => {
+        otherBox.querySelector(".album-box-front").style.filter = "blur(0px)";
+        otherBox.style.width = "300px";
+        otherBox.style.height = "300px";
+      });
+    });
+  });
 }
