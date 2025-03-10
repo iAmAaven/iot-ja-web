@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aapo Harjunpää - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar-aaven">
+        <a href="index.html">
+            <div class="navbar-aaven-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="About">
+                <img class="navbar-aaven-symbol default" src="images/profiili_circle_transparent_smooth_BW.png" alt="About" style="width: 30px;">
+                <img class="navbar-aaven-symbol hover" src="images/profiili_circle_transparent_smooth.png" alt="About" style="width: 30px;">
+            </div>
+        </a>
+        <a href="skills.html">
+            <div class="navbar-aaven-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Skills">
+                <img class="navbar-aaven-symbol default" src="symbols/skills.png" alt="Skills" style="width: 30px;">
+                <img class="navbar-aaven-symbol hover" src="symbols/skills_red.png" alt="Skills" style="width: 30px;">
+            </div>
+        </a>
+        <a href="projects.html">
+            <div class="navbar-aaven-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Projects">
+                <img class="navbar-aaven-symbol default" src="symbols/projects.png" alt="Projects" style="width: 30px;">
+                <img class="navbar-aaven-symbol hover" src="symbols/projects_red.png" alt="Projects" style="width: 30px;">
+            </div>
+        </a>
+        <a href="contact.html">
+            <div class="navbar-aaven-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Contact">
+                <img class="navbar-aaven-symbol default" src="symbols/contact.png" alt="Contact" style="width: 30px;">
+                <img class="navbar-aaven-symbol hover" src="symbols/contact_red.png" alt="Contact" style="width: 30px;">
+            </div>
+        </a>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <p class="section-title text-center">This page is a work in progress...</p>
+            <h2 class="section-title text-center">Contact</h2>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/aapo-harjunpää">LinkedIn</a></li>
+                <li><a href="https://github.com/iAmAaven">GitHub</a></li>
+                <li><a href="resume.pdf" download>Download Resume</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-fixed">
+        <div class="footer-links">
+            <a href="https://github.com/iamaaven" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://iamaaven.itch.io/" target="_blank" aria-label="Itch.io"><i class="bi bi-controller"></i></a>
+            <a href="https://www.linkedin.com/in/aapo-harjunpää/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.tiktok.com/@codingtonight" target="_blank" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+        </div>
+        <div class="copyright">&copy; 2025 Aapo Harjunpää. All rights reserved.</div>
+        <p><br></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+    </script>
+</body>
+</html>
