@@ -89,6 +89,12 @@ a {
     margin-bottom: 20px;
 }
 
+.skill-jumps-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
 .project-symbols-wrapper {
     display: flex;
     justify-content: space-evenly;
@@ -96,6 +102,12 @@ a {
     margin-bottom: 30px;
     margin-left: 20%;
     margin-right: 20%;
+}
+
+.project-button-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
 }
 
 #project-symbol {
@@ -161,8 +173,26 @@ footer {
     font-size: 14px;
 }
 
+#contact i {
+    margin-right: 10px;
+}
+
+#contact a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+#contact a:hover {
+    color: red;
+}
+
+#contact {
+    height: 100vh;
+}
+
 /* Media */
-@media (max-width: 720px) {
+@media (max-width: 800px) {
     .profile-image-wrapper {
         max-width: 200px;
     }
@@ -175,6 +205,22 @@ footer {
     .mobile-separator {
         display: block;
         margin-bottom: 120px;
+    }
+
+    .footer-fixed {
+        position: relative;
+    }
+
+    .navbar-aaven-fixed {
+        position: relative;
+    }
+
+    .profile-image-wrapper {
+        margin-top: 0;
+    }
+
+    .mobile-separator {
+        margin-bottom: 0;
     }
 }
 

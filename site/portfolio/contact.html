@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar-aaven">
+    <nav class="navbar-aaven-fixed">
         <a href="index.html">
             <div class="navbar-aaven-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="About">
                 <img class="navbar-aaven-symbol default" src="images/profiili_circle_transparent_smooth_BW.png" alt="About" style="width: 30px;">
@@ -36,17 +36,24 @@
             </div>
         </a>
     </nav>
-
+    
     <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <p class="section-title text-center">This page is a work in progress...</p>
-            <h2 class="section-title text-center">Contact</h2>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/aapo-harjunpää">LinkedIn</a></li>
-                <li><a href="https://github.com/iAmAaven">GitHub</a></li>
-                <li><a href="resume.pdf" download>Download Resume</a></li>
-            </ul>
+    <section id="contact" class="section d-flex justify-content-center align-items-center">
+        <div class="container text-center">
+            <div class="profile-image-wrapper" style="max-width: 250px;">
+                <img class="profile-image" src="images/profiili_circle_transparent_smooth_BW.png" alt="Profile Image">
+                <img class="profile-image hover" src="images/profiili_circle_transparent_smooth.png" alt="Profile Image Hover">
+            </div>
+            <div class="my-5"></div>
+            <div>
+                <p><i class="bi bi-telephone"></i> +358 44 0559611</p>
+                <p><i class="bi bi-envelope"></i><a href="mailto:a.harjunpaa02@gmail.com">a.harjunpaa02@gmail.com</a></p>
+            </div>
+            <br><br>
+            <div>
+                <a href="CV - Aapo Harjunpää (English).pdf"><button class="btn btn-primary mx-2" id="project"><strong>CV (English)</strong></button></a>
+                <a href="CV - Aapo Harjunpää (Suomi).pdf"><button class="btn btn-primary mx-2" id="project"><strong>CV (Finnish)</strong></button></a>
+            </div>
         </div>
     </section>
 
