@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    background-color: #272727;
+    color: rgb(216, 216, 216);
+}
+
+#game {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.expression {
+    margin-bottom: 10px;
+}
+
+button {
+    font-weight: bold;
+    background-color: rgb(216, 216, 216);
+    color: #272727;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(150, 150, 150);
+}
+
+#feedback {
+    margin-top: 10px;
+}

@@ -1,0 +1,44 @@
+body {
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    text-align: center;
+    height: 100vh;
+    margin: 1em;
+    background-color: #272727;
+    color: rgb(216, 216, 216);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input,
+button {
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+button {
+    background-color: rgb(216, 216, 216);
+    color: #272727;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(150, 150, 150);
+        color: #272727;
+    }
+}
+
+input {
+    width: 300px;
+    height: 50px;
+    text-align: center;
+}
+
+#feedback {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #b1b1b1;
+}

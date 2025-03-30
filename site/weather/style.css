@@ -1,0 +1,73 @@
+/* General Styles */
+body {
+    background-color: #121212;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/assat.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(50, 0, 0, 0.6);
+    background-blend-mode: darken;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 20px 0;
+    color: #f5f5f5;
+    text-transform: uppercase;
+}
+
+.weather-data {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tanaan-container,
+.ennuste-container>div {
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 10px 0;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.ennuste-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (min-width: 600px) {
+    .ennuste-container {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .ennuste-container>div {
+        flex: 1;
+    }
+}
