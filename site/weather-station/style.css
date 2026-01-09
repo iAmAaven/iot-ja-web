@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 1rem;
+}
+
+nav button {
+    margin-right: 1rem;
+}
+
+section {
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+
+.timespan-select {
+    margin: 1rem 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+    /* Allow wrapping for smaller screens */
+}
+
+table {
+    flex: 1;
+    /* max-width: 50%; */
+    /* Limit the table width to 50% */
+    border: 1px solid black;
+    /* Outer border */
+    border-collapse: collapse;
+    /* Ensure inner borders are visible */
+    padding: 4px;
+}
+
+table th,
+table td {
+    border: 1px solid black;
+    /* Inner borders for table cells */
+    padding: 8px;
+    /* Add padding for better readability */
+    text-align: left;
+    /* Align text to the left */
+}
+
+canvas {
+    flex: 1;
+    /* Allow the chart to take up equal space */
+    max-width: 50%;
+    /* Limit the chart width to 50% */
+    height: 400px;
+    /* Default height */
+    max-height: 500px;
+    /* Limit the maximum height */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart-and-stats {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 1rem;
+}
+
+.chart-and-stats canvas {
+    width: 100%;
+    height: 400px;
+    max-height: 500px;
+}
+
+
+.stats {
+    width: 100%;
+    /* Ensure the stats take up the full width */
+    text-align: left;
+    /* Align text to the left */
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        /* Stack the table and chart vertically on smaller screens */
+        align-items: center;
+    }
+
+    table,
+    canvas {
+        max-width: 100%;
+        /* Allow the table and chart to take up full width on smaller screens */
+    }
+
+    .stats {
+        text-align: center;
+        /* Center-align stats for smaller screens */
+    }
+}

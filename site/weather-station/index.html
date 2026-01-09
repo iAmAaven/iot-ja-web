@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porin Sääasema</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Porin Sääasema</h1>
+    <nav>
+        <button onclick="showView('temperature')">Lämpötila</button>
+        <button onclick="showView('wind_speed')">Tuulen Nopeus</button>
+        <button onclick="showView('wind_direction')">Tuulen Suunta</button>
+    </nav>
+
+    <section id="temperature" class="active">
+        <h2>Mittaus</h2>
+        <div class="measurement-select">
+            <label for="measurement-select">Valitse mittaus:</label>
+            <select id="measurement-select" onchange="updateMeasurementView()">
+                <option value="temperature">Lämpötila</option>
+                <option value="wind_speed">Tuulen Nopeus</option>
+                <option value="wind_direction">Tuulen Suunta</option>
+            </select>
+        </div>
+        <div class="timespan-select">
+            <label for="timespan-select">Valitse aikaväli:</label>
+            <select id="timespan-select" onchange="updateMeasurementView()">
+                <option value="20">Nyt</option>
+                <option value="24">24 tuntia</option>
+                <option value="48">48 tuntia</option>
+                <option value="72">72 tuntia</option>
+                <option value="168">1 viikko</option>
+                <option value="720">1 kuukausi</option>
+            </select>
+        </div>
+        <div class="content">
+            <table id="measurement-table"></table>
+            <canvas id="measurement-chart"></canvas>
+        </div>
+    </section>
+
+    <section id="wind_speed">
+        <h2>Tuulen Nopeus</h2>
+        <div class="timespan-select">
+            <label for="wind_speed-timespan">Aikaväli:</label>
+            <select id="wind_speed-timespan" onchange="updateWindData('wind_speed')">
+                <option value="20">Nyt</option>
+                <option value="24">24 tuntia</option>
+                <option value="48">48 tuntia</option>
+                <option value="72">72 tuntia</option>
+                <option value="168">1 viikko</option>
+                <option value="720">1 kuukausi</option>
+            </select>
+        </div>
+        <div class="content">
+            <table id="wind_speed-table"></table>
+            <canvas id="wind_speed-chart"></canvas>
+        </div>
+        <div id="wind_speed-stats" class="stats"></div>
+    </section>
+
+    <section id="wind_direction">
+        <h2>Tuulen Suunta</h2>
+        <div class="timespan-select">
+            <label for="wind_direction-timespan">Aikaväli:</label>
+            <select id="wind_direction-timespan" onchange="updateWindData('wind_direction')">
+                <option value="20">Nyt</option>
+                <option value="24">24 tuntia</option>
+                <option value="48">48 tuntia</option>
+                <option value="72">72 tuntia</option>
+                <option value="168">1 viikko</option>
+                <option value="720">1 kuukausi</option>
+            </select>
+        </div>
+        <div class="content">
+            <table id="wind_direction-table"></table>
+            <canvas id="wind_direction-chart"></canvas>
+        </div>
+        <div id="wind_direction-stats" class="stats"></div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
